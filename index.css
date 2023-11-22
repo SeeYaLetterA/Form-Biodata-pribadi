@@ -1,0 +1,13 @@
+.nama {
+    margin-top: 2vw;
+}
+
+.gender {
+    margin-bottom: 1.5vw;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 400px;
+}

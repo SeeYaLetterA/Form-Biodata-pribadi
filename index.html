@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- COSTUM CSS -->
+    <link rel="stylesheet" href="index.css"/>
   </head>
   <body>
-    <h1>Biodata Pribadi</h1>
-    <p>Lengkapi data-data pribadi dengan lengkap!</p>
-    <form>
-        <div class="form-group">
-            <label for="Nama" class="form-label">Nama :</label>
-            <input type="text" class="form-control" placeholder="Nama" id="Nama">
+    <!-- Start your project here-->
+    <div class="container">
+      <form>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4 nama">
+          <div class="col">
+            <div data-mdb-input-init class="form-outline">
+              <input type="text" id="form6Example1" class="form-control" />
+              <label class="form-label" for="form6Example1">Nama Depan</label>
+            </div>
+          </div>
+          <div class="col">
+            <div data-mdb-input-init class="form-outline">
+              <input type="text" id="form6Example2" class="form-control" />
+              <label class="form-label" for="form6Example2">Nama Belakang</label>
+            </div>
+          </div>
         </div>
-        <div class="form-check">
-            <p>Jenis kelamin :</p>
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-            Laki - laki
-            </label>
+      
+        <!-- Text input -->
+        <div class="gender">
+          <div class="btn-group">
+          
+            <input type="radio" class="btn-check" name="options" id="pria" autocomplete="off" />
+            <label class="btn btn-secondary" for="pria" data-mdb-ripple-init>Pria</label>
+          
+            <input type="radio" class="btn-check" name="options" id="wanita" autocomplete="off" />
+            <label class="btn btn-secondary" for="wanita" data-mdb-ripple-init>Wanita</label>
+          </div>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-            <label class="form-check-label" for="flexRadioDefault2">
-            Perempuan
-            </label>
+      
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="email" id="form6Example5" class="form-control" />
+          <label class="form-label" for="form6Example5">Email</label>
         </div>
-        <p>Hobi :</p>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-            Traveling
-            </label>
+        <!-- Password input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="password" id="form1Example2" class="form-control" />
+          <label class="form-label" for="form1Example2">Password</label>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-            Musik
-            </label>
+        <!-- Number input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+          <input type="number" id="form6Example6" class="form-control" />
+          <label class="form-label" for="form6Example6">Phone</label>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-            Olahraga
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-            Memasak
-            </label>
-        </div>
+      
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="formFileSm" class="form-label">Upload file (jpg,docx,xls)</label>
+          <input class="form-control form-control-sm" id="formFileSm" type="file">
         </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div clas="form-group">
-            <label for="NomorHandphone">Nomor Handphone</label>
-            <input type="text" class="form-control" id="NomorHandphone" placeholder="02">
-        </div>
-        <div class="form-group">
-            <label for="formFileSm" class="form-label">Small file input example</label>
-            <input class="form-control form-control-sm" id="formFileSm" type="file" />
-        </div>
-    </form>
-	<script src="index.js"></script>
+      
+        <!-- Submit button -->
+        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Kirim kuy</button>
+      </form>
+    </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
   </body>
 </html>
