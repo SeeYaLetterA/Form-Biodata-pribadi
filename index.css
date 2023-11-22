@@ -10,4 +10,9 @@
     display: flex;
     position: relative;
     width: 400px;
+    background-color: #bde0fe;
+    border-radius: 5%;
+    margin-top: 8vw;
+    height: relative;
+    justify-content: center;
 }
